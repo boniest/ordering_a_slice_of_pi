@@ -3,13 +3,10 @@ i discovered a pattern in pi.
 algorithm:
 
 1. multiply integer and decimal parts of pi (ie. 3 * (pi-3)).
-2. split between occurences of double zeros (these are "slices"), leaving one zero of each double-zero to each slice.
-3. split on single zeros (these are "bites").
-4. add digits of either slices or bites and see the beauty.
+2. split between occurences of triple, double, and single 0s. (i call a split on 000 a "chunk", a split on 00 a "slice", and a split on 0 a "bite".)
+4. add cohesive digits and look out!
 
-i have only done the first slice before committing.
-
-the first slice is 216 = 42 * 4 + 24 * 2 characters long (removing decimal and counting the zero to the left of the decimal)
+the first slice is 216 = 42 * 4 + 24 * 2 characters long (removing the decimal and counting the zero to the left of the decimal)
 
 here is the first slice:
 042477796076937971538793014983850865259150819812531746292483377692344921885862699588410447602635120394644425953984691994128153382865174669517607822438544335235085230810581556331667893386884686479114589328643292699780
@@ -40,8 +37,6 @@ those three total to
 ```
 46 + 84 + 38 = 168 = 42 * 4
 ```
-
-see where this is going?
 
 it gets more convoluted after that (which can you see in the notebook) but eventually it builds up bite by bite to...
 
@@ -75,8 +70,13 @@ the sum of the digits of a and b, respecting the signs, are:
 (4 + 2 + 4) - (4 + 2 + 4) = 10 - 10 = 0  
 ```
 
-take a look in the notebook. supposing i have not screwed anything up i think this is pretty darn remarkable.
+the second slice is 42 digits long. i haven't analysed beyond the first yet.
 
-i stopped here (for now) but the next slice is 42 digits long!
+but i did take a look all the way to the first occurence of a 000 and found in the first chunk that there are:
+
+8 slices = 4 * 2
+66 bites = 42 + 24
+
+take a look in the notebook. supposing i have not screwed anything up i think this is pretty darn remarkable.
 
 thanks for reading.
