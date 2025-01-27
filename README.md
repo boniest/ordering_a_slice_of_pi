@@ -72,11 +72,12 @@ the sum of the digits of a and b, respecting the signs, are:
 
 the second slice is 42 digits long. i haven't analysed beyond the first yet.
 
-but i did take a look all the way to the first occurence of a 000 and found in the first chunk there are:
+but i did take a look all the way to the first occurence of a 000 and found in the first chunk of 856 digits (leaving a 0 on both left and right) there are:
 
 ```
 8 slices = 4 * 2
 66 bites = 42 + 24
+856 digits = 4 * ((42*4) + (42+4))
 ```
 
 take a look in the notebook. supposing i have not screwed anything up i think this is pretty darn remarkable.
