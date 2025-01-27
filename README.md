@@ -74,8 +74,10 @@ the second slice is 42 digits long. i haven't analysed beyond the first yet.
 
 but i did take a look all the way to the first occurence of a 000 and found in the first chunk that there are:
 
+```
 8 slices = 4 * 2
 66 bites = 42 + 24
+```
 
 take a look in the notebook. supposing i have not screwed anything up i think this is pretty darn remarkable.
 
