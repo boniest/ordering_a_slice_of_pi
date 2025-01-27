@@ -72,7 +72,7 @@ the sum of the digits of a and b, respecting the signs, are:
 
 the second slice is 42 digits long. i haven't analysed beyond the first yet.
 
-but i did take a look all the way to the first occurence of a 000 and found in the first chunk that there are:
+but i did take a look all the way to the first occurence of a 000 and found in the first chunk there are:
 
 ```
 8 slices = 4 * 2
